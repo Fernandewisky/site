@@ -20,72 +20,30 @@
     <link rel="preload" href="js/utilities.min.js" as="script">
     <link rel="preload" href="js/config-theme.js" as="script">
     <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
     <!-- uikit -->
     <script src="js/vendors/uikit.min.js"></script>
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- touch icon -->
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
-    <title>Sign in - Liquid HTML5 Template</title>
+    <title>Cadastro - BookBase</title>
 </head>
 
 <body>
-    <!-- page loader begin -->
-    <div class="page-loader">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <!-- page loader end -->
-    <main>
-    <!-- section content begin -->
-    <div class="uk-section uk-padding-remove-vertical">
-        <div class="uk-container uk-container-expand">
-            <div class="uk-grid" data-uk-height-viewport="expand: true">
-                <div class="uk-width-3-5@m uk-background-cover uk-background-center-right uk-visible@m uk-box-shadow-xlarge" style="background-image: url(img/in-signin-image.jpg);">                
-                    
-                </div>
-                <div class="uk-width-expand@m uk-flex uk-flex-middle">
-                    <div class="uk-grid uk-flex-center">
-                        <div class="uk-width-3-5@m">
-                            <div class="uk-text-center in-padding-horizontal@s">
-                                <a class="uk-logo" href="index.html">
-                                    <img src="img/in-lazy.gif" data-src="img/user/header-logo-7aod97.svg" alt="logo" width="130" height="36" data-uk-img>
-                                </a>
-                                <p class="uk-text-lead uk-margin-small-top uk-margin-medium-bottom">Registre-se para acessar nosso site</p>
-                                <!-- login form begin -->
-                                <form class="uk-grid uk-form">
-                                    <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                        <span class="uk-form-icon uk-form-icon-flip fas fa-user fa-sm"></span>
-                                        <input class="uk-input uk-border-rounded" id="username" value="" type="text" placeholder="Usuário">
-                                    </div>
-                                    <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                        <span class="uk-form-icon uk-form-icon-flip fas fa-lock fa-sm"></span>
-                                        <input class="uk-input uk-border-rounded" id="password" value="" type="email" placeholder="Senha">
-                                    </div>
-                                    <div class="uk-margin-small uk-width-auto uk-text-small">
-                                        <label><input class="uk-checkbox" type="checkbox">Lembre-se de mim</label>
-                                    </div>
-                                    <div class="uk-margin-small uk-width-expand uk-text-small">
-                                    </div>
-                                    <div class="uk-margin-small uk-width-1-1">
-                                        <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit" name="submit">Registrar</button>
-                                    </div>
-                                </form>
-                                <!-- login form end -->
-                            </div>
-                        </div>
-                    </div>                
-                </div>
-            </div>
+    <form class="form">
+        <img src="img/user/log.png" alt=""/>
+        <h1>Cadastro</h1>
+        <input type="user" placeholder="Usuário"/>
+        <input type="email" placeholder="Email"/>
+        <div class="form-group">
+            <input id="password" type="password" placeholder="Senha"/>
+            <button class="btn-show" type="button" onclick="switchPasswordType()">
+                <i id="passIcon" class="bi bi-eye"></i>
+            </button>
         </div>
-    </div>
-    <!-- section content end -->
-    </main>
-    <!-- javascript -->
-    <script src="js/utilities.min.js"></script>
-    <script src="js/config-theme.js"></script>
+        <button class="btn-primary" onclick="redirecionar()">Cadastrar</button>
+    </form>
+    <script src="script.js"></script>
 </body>
-
 </html>
